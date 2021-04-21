@@ -1,5 +1,5 @@
 def convert_to_sql(csv_file_path, separator):
-    global csv_lines
+    global csv_lines # Temporary
     csv_lines = get_csv_file_lines(csv_file_path)
     create_table(csv_lines, separator)
     insert_data("user", csv_lines, separator)
